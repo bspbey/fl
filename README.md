@@ -2,15 +2,15 @@
 Merhaba arkadaşlar, sizlere codeigniter ile yazmış olduğum TMDb botu içeren "BDN Film" scriptini ücretsiz olarak veriyorum :)
 
 # Yönetim paneli özellikleri
--Filmler Sayfası (Ekle - Düzenle - Sil)
--Film Kaynakları Sayfası (Ekle - Düzenle - Sil)
--TMDb Film Botu Sayfası (ID ile veri çekme - Ekle)
--Kategoriler Sayfası (Ekle - Düzenle - Sil)
--Yöneticiler Sayfası (Ekle - Düzenle - Sil)
--Sayfalar Sayfası :) (Ekle - Düzenle - Sil)
--Yorumlar Sayfası (Düzenle - Sil)
--İletişim Mesajları Sayfası (Görüntüle - Sil)
--Reklamlar Sayfası (Düzenle - Aktif/Pasif)
+-Filmler Sayfası (Ekle - Düzenle - Sil)<br>
+-Film Kaynakları Sayfası (Ekle - Düzenle - Sil)<br>
+-TMDb Film Botu Sayfası (ID ile veri çekme - Ekle)<br>
+-Kategoriler Sayfası (Ekle - Düzenle - Sil)<br>
+-Yöneticiler Sayfası (Ekle - Düzenle - Sil)<br>
+-Sayfalar Sayfası :) (Ekle - Düzenle - Sil)<br>
+-Yorumlar Sayfası (Düzenle - Sil)<br>
+-İletişim Mesajları Sayfası (Görüntüle - Sil)<br>
+-Reklamlar Sayfası (Düzenle - Aktif/Pasif)<br>
 -Genel Ayarlar (Düzenle)
 
 # Açıklama
@@ -44,13 +44,15 @@ bu alana scriptin kurulu olduğu dizini yazın.
   
   bu alanları kendinize göre doldurunuz.
   
+#<a href="http://scriptdenemeler.ml" target="_blank">BDN Film Scripti Demo</a>
 # Kurulum Videosu #
 (Kurulum adımları itiraf scripti ile aynı olduğu için ekstra olarak kurulum videosu çekmedim)
   <a href="http://www.youtube.com/watch?feature=player_embedded&v=vCHJIBJN6PY
 " target="_blank"><img src="http://img.youtube.com/vi/vCHJIBJN6PY/0.jpg" 
 alt="BDN Film Scripti Kurulumu" width="240" height="180" border="10" /></a>
+<br>
 #Notlar
-Not 1: Eğer kurulumda bir sorun çıkarsa veya yardımcı olabileceğim bir konu olursa bana sosyal medya adreslerimden ulaşabilirsiniz.(Script üzerinde düzenleme - ekleme vs. yapmamaktayım.)
-Not 2: Bu script tamamen açık kaynak ve ücretsizdir. Kendinize göre düzenleyebilirsiniz.
-Not 3: Scriptte hazır girilmiş kategoriler ve 24 adet film bulunmaktadır (Filmlerin kaynakları ekli değildir). Eğer hazır girilmiş kategoriler ve filmleri istiyorsanız "sql" klasöründe "bdnfilm_DOLU.sql" verilerini kullanmalısınız.
+Not 1: Eğer kurulumda bir sorun çıkarsa veya yardımcı olabileceğim bir konu olursa bana sosyal medya adreslerimden ulaşabilirsiniz.(Script üzerinde düzenleme - ekleme vs. yapmamaktayım.)<br>
+Not 2: Bu script tamamen açık kaynak ve ücretsizdir. Kendinize göre düzenleyebilirsiniz.<br>
+Not 3: Scriptte hazır girilmiş kategoriler ve 24 adet film bulunmaktadır (Filmlerin kaynakları ekli değildir). Eğer hazır girilmiş kategoriler ve filmleri istiyorsanız "sql" klasöründe "bdnfilm_DOLU.sql" verilerini kullanmalısınız.<br>
 Not 4: Script kurulumundan sonra admin paneli veya diğer sayfalarda 404 hatası alıyorsanız gizli dosyaları görünür yapıp .htaccess dosyalarını tekrar ftp programı ile sunucuya atmayı unutmayınız.
