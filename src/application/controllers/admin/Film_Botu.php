@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Film_Botu extends Genel_MY_Controller {
+class Film_botu extends Genel_MY_Controller {
 
 public function __construct(){
      parent::__construct();

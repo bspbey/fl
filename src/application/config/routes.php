@@ -145,8 +145,4 @@ $route['admin/reklamlar/sil/(:any)'] = 'admin/reklamlar/delete/$1';
 
 //Film Botu
 $route['admin/film-botu'] = 'admin/film_botu/index';
-//$route['admin/reklamlar/duzenle'] = 'admin/reklamlar/update_form';
-//$route['admin/reklamlar/duzenle/(:any)'] = 'admin/reklamlar/update_form/$1';
-//$route['admin/reklamlar/duzenle/update/(:any)'] = 'admin/reklamlar/update/$1';
-//$route['admin/reklamlar/sil/(:any)'] = 'admin/reklamlar/delete/$1';
 //Film Botu
