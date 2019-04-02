@@ -16,7 +16,7 @@ Merhaba arkadaşlar, sizlere codeigniter ile yazmış olduğum TMDb botu içeren
 # Açıklama
 Film sitesi açmak isteyenlere tamamen açık kaynak kodlu uygun bir scripttir. Anasayfa kısmında StartBootstrap tarafından ücretsiz yayınlanan "Blog Home" ve "Blog Post" kullanılmıştır. Admin paneli kısmında StartBootstrap tarafından ücretsiz yayınlanan "SB Admin" kullanılmıştır. Kullanımı son derece basit ve kolaydır. Anasayfada gösterilecek olan filmlerin sayısını "Genel Ayarlar" kısmından "Anasayfada görünecek olan film sayısı" bölümünü doldurmaları yeterlidir.
 
-#TMDb Bot Kullanımı
+# TMDb Bot Kullanımı
 Script kurulumundan sonra menüden "Ayarlar" kısmına gidip burada "Film botu için TMDB API Anahtarı" yazan değeri bırakmış olduğum linkten aldığınız api anahtarı ile doldurunuz ve kaydediniz.
 Daha sonra TMDb sitesinden istediğiniz bir filmin idsini, menüden "Filmler-Film Botu" kısmına gidip "TMDb Film ID giriniz" yazan yere yazdıktan sonra "Film bilgilerini getir" butonuna basmanız yeterlidir. Bot girmiş olduğunuz idye ait olan filmin bilgilerini ve afişini sizin yerinize otomatik olarak getirecektir. Size kalan tek iş gelen sayfada "Kaydet" butonuna basmanız olacaktır :)
 
@@ -44,14 +44,15 @@ bu alana scriptin kurulu olduğu dizini yazın.
   
   bu alanları kendinize göre doldurunuz.
   
-#<a href="http://scriptdenemeler.ml" target="_blank">BDN Film Scripti Demo</a>
+# <a href="http://scriptdenemeler.ml" target="_blank">BDN Film Scripti Demo</a>
+
 # Kurulum Videosu #
 (Kurulum adımları itiraf scripti ile aynı olduğu için ekstra olarak kurulum videosu çekmedim)
   <a href="http://www.youtube.com/watch?feature=player_embedded&v=vCHJIBJN6PY
 " target="_blank"><img src="http://img.youtube.com/vi/vCHJIBJN6PY/0.jpg" 
 alt="BDN Film Scripti Kurulumu" width="240" height="180" border="10" /></a>
 <br>
-#Notlar
+#Notlar<br>
 Not 1: Eğer kurulumda bir sorun çıkarsa veya yardımcı olabileceğim bir konu olursa bana sosyal medya adreslerimden ulaşabilirsiniz.(Script üzerinde düzenleme - ekleme vs. yapmamaktayım.)<br>
 Not 2: Bu script tamamen açık kaynak ve ücretsizdir. Kendinize göre düzenleyebilirsiniz.<br>
 Not 3: Scriptte hazır girilmiş kategoriler ve 24 adet film bulunmaktadır (Filmlerin kaynakları ekli değildir). Eğer hazır girilmiş kategoriler ve filmleri istiyorsanız "sql" klasöründe "bdnfilm_DOLU.sql" verilerini kullanmalısınız.<br>
