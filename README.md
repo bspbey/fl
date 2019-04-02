@@ -45,6 +45,7 @@ bu alana scriptin kurulu olduğu dizini yazın.
   bu alanları kendinize göre doldurunuz.
   
 # <a href="http://scriptdenemeler.ml" target="_blank">BDN Film Scripti Demo</a>
+# <a href="https://www.r10.net/ucretsiz-scriptler/2019076-bdn-film-scripti-tmdb-film-botu-ile-birlikte.html" target="_blank">r10.net forum konusu</a>
 
 # Kurulum Videosu #
 (Kurulum adımları itiraf scripti ile aynı olduğu için ekstra olarak kurulum videosu çekmedim)
