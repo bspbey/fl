@@ -95,7 +95,7 @@ CREATE TABLE `brkdndr_film_yorumlar` (
   `yorum_email` varchar(255) COLLATE utf8_turkish_ci NOT NULL,
   `yorum_icerik` longtext COLLATE utf8_turkish_ci NOT NULL,
   `yorum_durum` int(1) NOT NULL,
-  `yorum_spoiler` int(1) NOT NULL DEFAULT '0',
+  `yorum_spoiler` int(1) DEFAULT '0',
   `createdAt` datetime NOT NULL,
   `updatedAt` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_turkish_ci;
