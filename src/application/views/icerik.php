@@ -93,7 +93,7 @@ name="film_vd"
 width="100%"
 height="400"
 src="<?php echo $film_kaynak[0]->kaynak_icerik; ?>"
-frameborder="0"
+frameborder="0" allowfullscreen
 ></iframe>
 <?php } ?>
 </div>
@@ -109,7 +109,7 @@ name="film_vd"
 width="100%"
 height="400"
 src="<?php echo $film_kaynak[0]->kaynak_icerik; ?>"
-frameborder="0"
+frameborder="0" allowfullscreen
 ></iframe>
 <?php } } ?>
 
