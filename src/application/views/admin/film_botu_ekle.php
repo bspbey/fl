@@ -78,8 +78,8 @@
 <input type="text" class="form-control" id="etiket" name="etiket">
 </div>
 <div class="form-group">
-<img width="250" height="300" src="https://image.tmdb.org/t/p/w600_and_h900_bestv2<?php echo $film_poster; ?>">
-<input type="hidden" name="film_poster" value="https://image.tmdb.org/t/p/w600_and_h900_bestv2<?php echo $film_poster; ?>">
+<img width="250" height="300" src="http://image.tmdb.org/t/p/w600_and_h900_bestv2<?php echo $film_poster; ?>">
+<input type="hidden" name="film_poster" value="http://image.tmdb.org/t/p/w600_and_h900_bestv2<?php echo $film_poster; ?>">
 </div>
 <div class="form-group">
 <label for="film_icerik">Film Hakkında Bilgi</label>

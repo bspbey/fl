@@ -36,7 +36,7 @@ public function film_getir()
 
         $curl = curl_init();
         $film_id = $this->input->post("film_tmdb_id");
-        $curl_url = "https://api.themoviedb.org/3/movie/$film_id?language=tr-TR&api_key=$ayarlar->site_tmdb_api";
+        $curl_url = "http://api.themoviedb.org/3/movie/$film_id?api_key=$ayarlar->site_tmdb_api&language=tr-TR";
 
         curl_setopt_array($curl, array(
             CURLOPT_URL => $curl_url,
@@ -46,7 +46,8 @@ public function film_getir()
             CURLOPT_TIMEOUT => 30,
             CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
             CURLOPT_CUSTOMREQUEST => "GET",
-            CURLOPT_POSTFIELDS => "{}",
+            //CURLOPT_POSTFIELDS => "{}",
+            //CURLOPT_CAINFO => dirname(__FILE__).'/cacert.pem'
         ));
 
         $response = curl_exec($curl);
@@ -59,7 +60,7 @@ public function film_getir()
         } else {
             $data = json_decode($response, true);
         }
-        $film_turleri = array($data["genres"]);
+       $film_turleri = array($data["genres"]);
         foreach ($film_turleri as $d) {
             if (is_array($d)) {
                 foreach ($d as $film_turu) {
@@ -77,7 +78,7 @@ public function film_getir()
             'title' => "TMDb Film Botu ile Film Ekle | Admin Paneli",
             'list' => $list,
             'tmdb_id' => $data["id"],
-            'film_baslik' => $data["title"],
+            'film_baslik' => $data["original_title"],
             'film_tur' => $film_turu["name"],
             'film_aciklama' => $data["overview"],
             'film_poster' => $data["poster_path"],
@@ -98,19 +99,23 @@ public function film_getir()
 
         if(isset($_POST["film_ekle"])) {
 
-             function poster_indir($curl_url,$saveto){
-                $ch = curl_init ($curl_url);
-                curl_setopt($ch, CURLOPT_HEADER, 0);
-                curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-                curl_setopt($ch, CURLOPT_BINARYTRANSFER,1);
-                $raw=curl_exec($ch);
-                curl_close ($ch);
-                if(file_exists($saveto)){
-                    unlink($saveto);
-                }
-                $fp = fopen($saveto,'x');
-                fwrite($fp, $raw);
-                fclose($fp);
+            function poster_indir($link,$name=null){
+            $link_info = pathinfo($link);
+            $uzanti = strtolower($link_info['extension']); 
+            $file = ($name) ? $name.'.'.$uzanti : $link_info['basename'];
+            $yol = "uploads/".$file;
+            
+            $curl = curl_init($link);
+            $fopen = fopen($yol,'w');
+            
+            curl_setopt($curl, CURLOPT_HEADER,0);
+            curl_setopt($curl, CURLOPT_RETURNTRANSFER,1);
+            curl_setopt($curl, CURLOPT_HTTP_VERSION,CURL_HTTP_VERSION_1_0);
+            curl_setopt($curl, CURLOPT_FILE, $fopen);
+            
+            curl_exec($curl);
+            curl_close($curl);
+            fclose($fopen);
             }
 
             $tmdb_id = $this->input->post("tmdb_id");
@@ -131,7 +136,7 @@ public function film_getir()
             $createdAt = date("Y-m-d H:i:s");
 
             $poster_adi = $film_url."-".rand(1,999999);
-            poster_indir("$film_poster",'uploads/'.$poster_adi.'.jpg');
+            poster_indir($film_poster,$poster_adi);
 
 
             if ($film_baslik && $kategori_id && $yazar_id && $film_icerik) {
