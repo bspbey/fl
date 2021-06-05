@@ -21,7 +21,7 @@ Script kurulumundan sonra menüden "Ayarlar" kısmına gidip burada "Film botu i
 Daha sonra TMDb sitesinden istediğiniz bir filmin idsini, menüden "Filmler-Film Botu" kısmına gidip "TMDb Film ID giriniz" yazan yere yazdıktan sonra "Film bilgilerini getir" butonuna basmanız yeterlidir. Bot girmiş olduğunuz idye ait olan filmin bilgilerini ve afişini sizin yerinize otomatik olarak getirecektir. Size kalan tek iş gelen sayfada "Kaydet" butonuna basmanız olacaktır :)
 
 
-# Yönetim paneli bilgileri (demo panel bilgileri için bu adresten iletişime geçebilirsiniz: http://desponres.ml/iletisim)
+# Yönetim paneli bilgileri (demo panel bilgileri için bu adresten iletişime geçebilirsiniz: https://desponres.github.io/iletisim)
 website.com/admin
 Kullanıcı adı: admin@admin.com
 Şifre: 123456789
