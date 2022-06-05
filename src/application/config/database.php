@@ -75,10 +75,10 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'buraya veritabanı sunucunuzun adı',//Örneğin: localhost
-	'username' => 'buraya veritabanı kullanıcı adınız',//Örneğin: root
-	'password' => 'buraya veritabanı şifreniz',//Örneğin: 123456789
-	'database' => 'buraya veritabanı adınız',//Örneğin: bdnfilm
+	'hostname' => 'sql211.unaux.com',//Örneğin: localhost
+	'username' => 'unaux_31890947',//Örneğin: root
+	'password' => '7mfb9dgpfhj',//Örneğin: 123456789
+	'database' => 'unaux_31890947_itiraf',//Örneğin: bdnfilm
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
