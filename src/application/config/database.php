@@ -75,10 +75,10 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'sql211.unaux.com',//Örneğin: localhost
-	'username' => 'unaux_31890947',//Örneğin: root
-	'password' => '7mfb9dgpfhj',//Örneğin: 123456789
-	'database' => 'unaux_31890947_flim',//Örneğin: bdnfilm
+	'hostname' => 'sql304.unaux.com',//Örneğin: localhost
+	'username' => 'unaux_32155602',//Örneğin: root
+	'password' => 'bplnm6twfv5',//Örneğin: 123456789
+	'database' => 'unaux_32155602_side',//Örneğin: bdnfilm
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
